@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64"
+  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" :width="size" :height="size"
     viewBox="0 0 32 32">
     <g transform="matrix(.266667 0 0 .266667 -17.954934 -5.057333)">
       <!-- <circle cx="127.332" cy="78.966" r="51.15" fill="#de5833" /> -->
@@ -30,7 +30,7 @@
       <path
         d="M126.426 115.292c0 4.933-.707 7.05 1.4 7.52 2.106.48 6.104 0 7.52-.938 1.4-.94.23-7.28-.236-8.466-.473-1.173-8.692-.227-8.692 1.885z"
         fill="none" :stroke="color" />
-      <circle cx="127.331" cy="78.965" r="57.5" fill="none" :stroke="color" stroke-width="4" />
+      <circle cx="127.331" cy="78.965" r="57.5" fill="none" :stroke="color" stroke-width="8" />
     </g>
   </svg>
 </template>

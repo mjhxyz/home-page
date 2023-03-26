@@ -2,6 +2,7 @@
 import ChatGPTIcon from './icons/IconChatGPT.vue'
 import DDGIcon from './icons/IconDDG.vue'
 import BlogIcon from './icons/IconBlog.vue'
+import PwdIcon from './icons/IconPwd.vue'
 </script>
 
 <template>
@@ -24,7 +25,7 @@ export default {
         return {
             linkList: [
                 {
-                    title: '博客',
+                    title: 'Blog',
                     link: 'https://blog.mjhxyz.top',
                     icon: BlogIcon,
                 },
@@ -38,6 +39,11 @@ export default {
                     link: 'https://ddg.mjhxyz.top',
                     icon: DDGIcon,
                 },
+                {
+                    title: 'PwdGenerator',
+                    link: 'https://pwd.mjhxyz.top/',
+                    icon: PwdIcon,
+                }
             ]
         }
     }
@@ -61,7 +67,7 @@ export default {
     display: flex;
     flex-wrap: wrap;
     align-content: start;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
