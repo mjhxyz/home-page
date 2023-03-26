@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>百宝箱</title>
+</head>
+
+<body>
+  <svg class="dot" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px;">
+    <pattern id="pattern-1" x="0" y="12" width="24" height="24" patternUnits="userSpaceOnUse"
+      patternTransform="translate(-0.5,-0.5)">
+      <circle cx="0.5" cy="0.5" r="0.5" fill="hsl(246,  7%, 45%)"></circle>
+    </pattern>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-1)"></rect>
+  </svg>
+  <div id="app"></div>
+  <footer id="footer">
+    <p>湘ICP备2023005753号-1</p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
