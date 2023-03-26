@@ -7,10 +7,12 @@ import BlogIcon from './icons/IconBlog.vue'
 <template>
     <div class="container">
         <div class="page-box">
-            <a target="_blank" :href="link.link" v-for="link in linkList" :key="link.link" class="page-box-card">
-                <component color="#6F98A8" :is="link.icon" />
-                {{ link.title }}
-            </a>
+            <div v-for="link in linkList" :key="link.link" class="page-box-card">
+                <a class="page-box-card-a" target="_blank" :href="link.link"  >
+                    <component color="#6F98A8" :is="link.icon" />
+                    {{ link.title }}
+                </a>
+            </div>
         </div>
     </div>
 </template>
@@ -55,18 +57,41 @@ export default {
 .page-box {
     /* border: 1px solid #000; */
     min-height: 300px;
-    width: 500px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: start;
     justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+    .page-box .page-box-card {
+        flex-basis: 33.33%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .page-box .page-box-card {
+        flex-basis: 100%;
+    }
+}
+
+
 .page-box .page-box-card {
+    margin-bottom: 20px;
+    height: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 0 10px;
+}
+
+.page-box .page-box-card .page-box-card-a {
     border: 1px solid #333;
-    width: 150px;
     height: 100px;
-    margin-bottom: 30px;
+    width: 100%;
     border-radius: 10px;
     display: flex;
     justify-content: space-around;
@@ -81,7 +106,12 @@ export default {
     padding: 10px 0;
 }
 
-.page-box-card:hover {
+.page-box .page-box-card::after {
+    display: block;
+    padding-bottom: calc(33.33% + 10px);
+}
+
+.page-box-card-a:hover {
     transform: translateY(-5px);
     box-shadow: 0px 5px 10px rgba(100, 100, 100, 0.5);
     color: hsla(160, 100%, 37%, 1);
