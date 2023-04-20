@@ -31,7 +31,7 @@ export default {
                 },
                 {
                     title: 'ChatGPT',
-                    link: 'https://chat.mjhxyz.top',
+                    link: 'https://lls.mjhxyz.top/',
                     icon: ChatGPTIcon,
                 },
                 {
@@ -41,7 +41,7 @@ export default {
                 },
                 {
                     title: 'PwdGenerator',
-                    link: 'https://lls.mjhxyz.top/',
+                    link: 'https://pwd.mjhxyz.top/',
                     icon: PwdIcon,
                 }
             ]
