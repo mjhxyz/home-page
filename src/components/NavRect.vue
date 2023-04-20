@@ -9,7 +9,7 @@ import PwdIcon from './icons/IconPwd.vue'
     <div class="container">
         <div class="page-box">
             <div v-for="link in linkList" :key="link.link" class="page-box-card">
-                <a class="page-box-card-a" target="_blank" :href="link.link"  >
+                <a class="page-box-card-a" target="_blank" :href="link.link">
                     <component color="#6F98A8" :is="link.icon" />
                     {{ link.title }}
                 </a>
@@ -41,7 +41,7 @@ export default {
                 },
                 {
                     title: 'PwdGenerator',
-                    link: 'https://pwd.mjhxyz.top/',
+                    link: 'https://lls.mjhxyz.top/',
                     icon: PwdIcon,
                 }
             ]
