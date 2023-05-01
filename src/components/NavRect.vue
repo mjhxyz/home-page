@@ -43,6 +43,11 @@ export default {
                     title: 'PwdGenerator',
                     link: 'https://pwd.mjhxyz.top/',
                     icon: PwdIcon,
+                },
+                {
+                    title: 'VanishVault',
+                    link: 'https://vv.mjhxyz.top/',
+                    icon: PwdIcon,
                 }
             ]
         }
